@@ -112,8 +112,8 @@ function setInformation(name, city, distance, profile, athleteProgress, villesUl
     }
     let find = false;
     villes.villes.forEach((ville, index) => {
+      athlete.distanceTotale > ville.supperficie ? villesUl.children[index].classList.add('done') : null
       if (athlete.distanceTotale < ville.supperficie && !find) {
-        villesUl.children[index].classList.add('done');
         find = true
         athleteProgress.max = ville.supperficie
         athleteProgress.min = index != 0 ? ville.supperficie[index -1] : ville.supperficie
