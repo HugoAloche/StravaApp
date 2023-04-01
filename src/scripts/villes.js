@@ -1,3 +1,10 @@
+/**
+ * Liste des villes
+ * @type {Array}
+ * @property {string} nom - Nom de la ville
+ * @property {string} pays - Pays de la ville
+ * @property {number} supperficie - Superficie de la ville
+ */
 export default {
     villes: [
         {

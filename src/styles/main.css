@@ -10,6 +10,15 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
+#villesUl li.done {
+    text-decoration: line-through;
+    color: red;
+}
+
 body {
     background-color: #f4f4f4;
     height: 100vh;
@@ -85,4 +94,11 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: rgb(67, 67, 201);
     border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-card {
+        width: 90%;
+        padding: 10px;
+    }
 }
