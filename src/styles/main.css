@@ -14,7 +14,7 @@ ul {
     list-style: none;
 }
 
-#villesUl li.done {
+#villes li.done {
     text-decoration: line-through;
     color: red;
 }
