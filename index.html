@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava app</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+
+<body>
+    <h1>Quelle ville a tu déjà parcouru cette année ?</h1>
+    <a class="btn"
+        href="https://www.strava.com/oauth/authorize?client_id=104903&redirect_uri=http://localhost:5500&response_type=code&approval_prompt=auto&scope=activity:write,read">Calculer
+        mon parcours</a>
+    <div class="profile-card">
+        <header>
+            <img id="athlete-profile" src="" alt="">
+            <p id="athlete-name"></p>
+        </header>
+        <p id="athlete-city"></p>
+        <p id="athlete-distance"></p>
+        <div class="progress">
+            <div class="col">
+                <p id="villeDepart"></p>
+                <p id="valueDepart"></p>
+            </div>
+            <progress id="athlete-progress" value="0" max="100"></progress>
+            <div class="col">
+                <p id="villeArrivee"></p>
+                <p id="valueArrivee"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./src/scripts/main.js" type="module"></script>
+
+</html>
